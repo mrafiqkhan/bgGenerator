@@ -1,9 +1,11 @@
-const color1 = document.querySelector("[name='color1']");
-const color2 = document.querySelector("[name='color2']");
+const color1 = document.querySelector("[name='color1']"); // color input element
+const color2 = document.querySelector("[name='color2']"); // color input element 
 const body = document.querySelector("body");
 const container = document.querySelector(".container");
 const h4 = document.querySelector("h4");
-const h1 = document.querySelector("h1");
+ const sp1 = document.querySelector("#c1"); // span element with #c1 id
+ const sp2 = document.querySelector("#c2"); // span element with #c2 id
+//const h1 = document.querySelector("h1");
 
 color1.addEventListener('input', changeBgColor);
 color2.addEventListener('input', changeBgColor);
@@ -37,8 +39,7 @@ function changeBgColor() {
 function firstTimeBg() {
   let c1 = generateHexValue(),
     c2 = generateHexValue();
-  let sp1 = document.querySelector("#c1");
-  let sp2 = document.querySelector("#c2");
+
 
   body.style.backgroundImage = "linear-gradient(to left," + c1 + ", " + c2 + ")";
 
