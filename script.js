@@ -63,7 +63,7 @@ function generateHexValue() {
 }
 /**
  *This function decides if the number is greater then 9
- *if return a character between a to f according to the hex value
+ *it returns a character between a to f according to the hex value
  * @param {integer} val
  */
 function numberDecision(val) {
